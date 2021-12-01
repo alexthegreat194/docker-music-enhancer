@@ -51,6 +51,8 @@
                 padding-bottom: 10px;
                 background-color: #0077A8;
                 margin-top: 20px;
+                box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
             }
 
             #software-image
@@ -64,6 +66,36 @@
                 font-style: normal;
                 font-weight: 200;
                 font-size: 20px;
+            }
+
+            .card
+            {
+                text-align: center;
+                background-color: #0077A8;
+                color: white;
+                padding: 25px;
+            }
+
+            .card-icon 
+            {
+                width: 100px;
+                height: 100px;
+            }
+
+            .card-title
+            {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 32px;
+                color: #F5962B;
+            }
+
+            .card-text
+            {
+                font-style: normal;
+                font-weight: 200;
+                font-size: 22px;
+                margin-top: auto;
             }
 
         </style>
@@ -105,10 +137,10 @@
             <img class="mt-auto" src="static/images/software.gif" alt="software" id="software-image">
         </div>
 
-        <div>
+        <div class="container d-flex justify-content-evenly mt-" style="margin: 24px;">
 
             <div class="card col-3">
-                <img class="m-auto" src="static/images/Lock.png" alt="lock" style="width: 127px; height: 127px;">
+                <img class="m-auto card-icon" src="static/images/Lock.png" alt="lock">
                 <div class="card-body">
                     <h4 class="card-title">Security is key</h4>
                     <p class="card-text">we made sure that our application encrypts your files so no one is able to steal your work </p>
@@ -116,18 +148,18 @@
             </div>
 
             <div class="card col-3">
-                <img class="m-auto" src="static/images/Lock.png" alt="lock" style="width: 127px; height: 127px;">
+                <img class="m-auto card-icon" src="static/images/Smile.png" alt="lock">
                 <div class="card-body">
-                    <h4 class="card-title">Security is key</h4>
-                    <p class="card-text">we made sure that our application encrypts your files so no one is able to steal your work </p>
+                    <h4 class="card-title">Easy to Use</h4>
+                    <p class="card-text">The Softweare adapts to your music with little to no inpu</p>
                 </div>
             </div>
 
             <div class="card col-3">
-                <img class="m-auto" src="static/images/Lock.png" alt="lock" style="width: 127px; height: 127px;">
+                <img class="m-auto card-icon" src="static/images/Money.png" alt="lock" >
                 <div class="card-body">
-                    <h4 class="card-title">Security is key</h4>
-                    <p class="card-text">we made sure that our application encrypts your files so no one is able to steal your work </p>
+                    <h4 class="card-title">Free</h4>
+                    <p class="card-text">An application with no in app purchases or premium memberships</p>
                 </div>
             </div>
 
