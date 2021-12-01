@@ -38,7 +38,32 @@
 
             #banner-text a button
             {
-                font-size: 48px;
+                
+            }
+
+            #download-button
+            {
+                font-size: 42px;
+                font-weight: 300;
+                padding-left: 70px;
+                padding-right: 70px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: #0077A8;
+                margin-top: 20px;
+            }
+
+            #software-image
+            {
+                width: 684px;
+                height: 314px;
+            }
+
+            #latest-version
+            {
+                font-style: normal;
+                font-weight: 200;
+                font-size: 20px;
             }
 
         </style>
@@ -68,22 +93,38 @@
             </div>
         </nav>
 
-        <div class="d-flex flex-row">
+        <div class="container d-flex flex-row" style="margin: 25px">
             <div id="banner-text">
-                <h2>Enhance your music, experience maximum enjoyment, </h2>
-                <h1>BE ENTERTAINED.</h1>
-                <a href="">
-                    <button class="btn btn-primary">Download</button>
-                </a>
-                <h5>Download the latest version</h5>
+                <h2 class="text-center">Enhance your music, experience maximum enjoyment, </h2>
+                <h1 class="text-center">BE ENTERTAINED.</h1>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-primary" id="download-button">Download</button>
+                </div>
+                <h5 class="text-center" id="latest-version">Download the latest version</h5>
             </div>
-            <img src="static/images/software.gif" alt="software">
+            <img class="mt-auto" src="static/images/software.gif" alt="software" id="software-image">
         </div>
 
         <div>
 
             <div class="card col-3">
-                <img class="" src="static/images/Lock.png" alt="lock" style="width: 127px; height: 127px;">
+                <img class="m-auto" src="static/images/Lock.png" alt="lock" style="width: 127px; height: 127px;">
+                <div class="card-body">
+                    <h4 class="card-title">Security is key</h4>
+                    <p class="card-text">we made sure that our application encrypts your files so no one is able to steal your work </p>
+                </div>
+            </div>
+
+            <div class="card col-3">
+                <img class="m-auto" src="static/images/Lock.png" alt="lock" style="width: 127px; height: 127px;">
+                <div class="card-body">
+                    <h4 class="card-title">Security is key</h4>
+                    <p class="card-text">we made sure that our application encrypts your files so no one is able to steal your work </p>
+                </div>
+            </div>
+
+            <div class="card col-3">
+                <img class="m-auto" src="static/images/Lock.png" alt="lock" style="width: 127px; height: 127px;">
                 <div class="card-body">
                     <h4 class="card-title">Security is key</h4>
                     <p class="card-text">we made sure that our application encrypts your files so no one is able to steal your work </p>
