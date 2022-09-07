@@ -23,8 +23,8 @@ def contact():
 
 if __name__ == "__main__":
     # 5000 or the port defined in the .env file
-    port = 5000
+    port = 3000
     if os.environ.get("PORT"):
         port = int(os.environ.get("PORT"))
 
-    app.run(debug=True, port=port)
+    app.run(port=port, host="0.0.0.0")
